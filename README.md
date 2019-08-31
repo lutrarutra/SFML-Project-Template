@@ -28,3 +28,6 @@ If you have renamed your project folder after building the project try this:
 
 # Additional info
 - This skeleton uses SFML version 2.5.1. You can update SFML by simply downloading new version from: "https://github.com/SFML/SFML" and replacing "SFML-2.5.1"-folder with new version.
+
+- https://github.com/lutrarutra/sfml_cmake_skeleton/
+- Creator: lutrarutra
