@@ -4,7 +4,7 @@
 int main(int argc, char *argv[])
 {
     sf::Window App(sf::VideoMode(1280, 720), "project_name");
-
+    int *i = new int;
     while (App.isOpen())
     {
         sf::Event Event;
