@@ -16,14 +16,15 @@ Skeleton project folder for building SFML-project with CMake
 # How to use?
 #### If you are new to CMake don't worry so am I. I made this for myself so it will be easy to copy this for new project and be ready to go without additional hassle.
 - In project folder you will find "CMakeLists.txt". Don't rename it and don't move it if you don't know what you are doing.
+- Add your ".cpp"-files here: `set(SOURCES src/main.cpp 'here')`. Don't forget "`src/`".
+- Create your header files (".h/.hpp")-files inside of src folder. If you want to put them into different folder just modify this line: `include_directories(your_include_folder_name)`
+- If your project uses additional files like images or fonts keep them in "res" folder. and add this line for each additional file `configure_file(res/filename.extension filename.extension COPYONLY)`
 
 
 # Not working?
 If you have renamed your project folder after building the project try this: 
 - Delete everything inside of "build" folder. Do steps 5-7 again inside of empty "build" folder.
-- Add your ".cpp"-files here: `set(SOURCES src/main.cpp 'here')`. Don't forget "`src/`".
-- Create your header files (".h/.hpp")-files inside of src folder. If you want to put them into different folder just modify this line: `include_directories(your_include_folder_name)`
-- If your project uses additional files like images or fonts keep them in "res" folder. and add this line for each additional file `configure_file(res/filename.extension filename.extension COPYONLY)`
+
 
 # Additional info
 - This skeleton uses SFML version 2.5.1. You can update SFML by simply downloading new version from: "https://github.com/SFML/SFML" and replacing "SFML-2.5.1"-folder with new version.
