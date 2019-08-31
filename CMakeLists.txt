@@ -17,9 +17,11 @@ include_directories(src)
 # Additional resources like images and fonts
 configure_file(res/OpenSans-Regular.ttf OpenSans-Regular.ttf COPYONLY)
 
+
 # All .cpp-files
 set(SOURCES src/main.cpp)
 add_executable(${PROJECT_NAME} ${SOURCES})
+
 
 # Find sfml and link it
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/cmake_modules" ${CMAKE_MODULE_PATH})
