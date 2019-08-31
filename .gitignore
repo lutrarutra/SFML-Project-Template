@@ -1,0 +1,13 @@
+# Build system
+gmon.out
+*.stats
+Thumbs.db
+.DS_Store
+build
+bin
+
+# VS Code
+.vscode/ipch
+
+# Project specific
+#
