@@ -3,16 +3,18 @@
 
 int main(int argc, char *argv[])
 {
-    sf::Window App(sf::VideoMode(1280, 720), "project_name");
+    sf::ContextSettings settings;
+    settings.antialiasingLevel = 8;
+    sf::RenderWindow window(sf::VideoMode(1280, 720), "project_name", sf::Style::Close, settings);
 
-    while (App.isOpen())
+    while (window.isOpen())
     {
         sf::Event Event;
-        while (App.pollEvent(Event))
+        while (window.pollEvent(Event))
         {
             if (Event.type == sf::Event::Closed)
-                App.close();
+                window.close();
         }
-        App.display();
+        window.display();
     }
 }
