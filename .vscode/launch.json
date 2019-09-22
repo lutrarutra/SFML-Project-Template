@@ -9,17 +9,17 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/a",
+            "cwd": "${workspaceFolder}/build",
             "preLaunchTask": "make",
             "args": [],
             "internalConsoleOptions": "openOnSessionStart",
             "logging": {
                 "moduleLoad": false,
-                "programOutput": true,
+                "programOutput": false,
                 "trace": false
             },
             "showDisplayString": false,
-            "externalConsole": false,
-            "cwd": "${workspaceFolder}/build",
+            "externalConsole": true,
             "environment": [],
             "MIMode": "lldb",
         }
