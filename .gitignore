@@ -4,6 +4,7 @@ gmon.out
 Thumbs.db
 .DS_Store
 build
+build/
 bin
 
 # VS Code
