@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 {
     sf::ContextSettings settings;
     settings.antialiasingLevel = 8;
-    sf::RenderWindow window(sf::VideoMode(1280, 720), "project_name", sf::Style::Close, settings);
+    sf::RenderWindow window(sf::VideoMode(1920, 1080), "project_name", sf::Style::Close, settings);
 
     while (window.isOpen())
     {
