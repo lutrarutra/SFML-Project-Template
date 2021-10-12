@@ -8,10 +8,10 @@
                 "command": "mingw32-make.exe"
             },
             "linux" :{
-                "command" : "make"
+                "command" : "make -j$((`nproc`))"
             },
             "osx" :{
-                "command" : "make"
+                "command" : "make -j$((`sysctl -n hw.ncpu`))"
             },
             "options": {
                 "cwd": "${workspaceFolder}/build"
