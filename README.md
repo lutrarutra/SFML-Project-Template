@@ -1,21 +1,25 @@
-# Cross platfrom SFML CMake project template
-Skeleton project folder for crossplatform building SFML-project with CMake.Includes ImGui for easy GUI.
+# Cross platfrom SFML + ImGUI project template 
+
+Project template for cross platform SFML-project using CMake.
+Includes VSCode configs to build & debug and ImGui for easy GUI.
+
+Build easy OpenGL projects with GUI e.g. for algorithm visualisation: <https://www.youtube.com/watch?v=TYzOSeK_qxM>
 
 # Prerequisites
 
 ## Mac OS
 
 1. Install command line tools `xcode-select --install`
- - <https://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/>
+ - Refer to <https://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/>
 
 2. Install brew `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
- - <https://brew.sh/>
+ - Refer to <https://brew.sh/>
 
 3. Install CMake `brew install cmake` 
  - Run `cmake --version` to confirm that CMake works from commmand line, if not:
  - Make sure `/usr/local/bin` is in your `PATH`
 `echo $PATH` should contain `/usr/local/bin`
- - <https://stackoverflow.com/questions/32185079/installing-cmake-with-home-brew>
+ - Refer to <https://stackoverflow.com/questions/32185079/installing-cmake-with-home-brew>
 
 5. Download and install VSCode
  - <https://code.visualstudio.com/>
@@ -98,9 +102,23 @@ Skeleton project folder for crossplatform building SFML-project with CMake.Inclu
 - If your project uses additional files like images or fonts keep them in "res" folder. and add this line for each additional file `configure_file(res/filename.extension filename.extension COPYONLY)`
 
 # Not working?
-If you have renamed your project folder after building the project try this: 
+If you have renamed your project folder after generating makefiles with CMake or run misconfigured CMake try this: 
 - Delete everything inside of "build" folder. Do steps 5-7 again inside of empty "build" folder.
 
-# ps
-- https://github.com/lutrarutra/sfml_cmake_skeleton/
+# 3rd party libraries
+
+## SFML
+- SFML: SFML is a simple, fast, cross-platform and object-oriented multimedia API
+- <https://github.com/SFML/SFML>
+
+## Dear ImGui
+- ImGui: Dear ImGui is a bloat-free graphical user interface library for C++.
+- <https://github.com/ocornut/imgui>
+
+## ImGui-SFML binding
+- ImGui-SFML: Library which allows you to use Dear ImGui with SFML binding 
+- <https://github.com/eliasdaler/imgui-sfml>
+
+# p.s.
+- https://github.com/lutrarutra/SFML-Project-Template
 - Creator: lutrarutra
