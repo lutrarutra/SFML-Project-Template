@@ -29,26 +29,18 @@ Skeleton project folder for crossplatform building SFML-project with CMake.Inclu
 
 2. Install GCC, make and other tools: `sudo apt install build-essential`
 
-3. 5. Download and install VSCode
+3. Download and install VSCode
  - <https://code.visualstudio.com/docs/setup/linux>
  - Install the C/C++ extension for VS Code. You can install the C/C++ extension by searching for 'c++' in the Extensions view (⇧⌘X).
   - (Optional) Install CMake language support <https://marketplace.visualstudio.com/items?itemName=twxs.cmake>
 
 4. Install SFML dependencies:
  - Note that this is only for linux, refer to <https://www.sfml-dev.org/tutorials/2.5/compile-with-cmake.php>
- - freetype
- - x11
- - xrandr
- - udev
- - opengl
- - flac
- - flac
- - ogg
- - vorbis
- - vorbisenc
- - vorbisfile
- - openal
- - pthread
+ - `sudo apt install libx11-dev xorg-dev freeglut3-dev libudev-dev`
+ - Other dependencies might be required depending on your distribution, refer to the link above.
+
+5. Install CMake
+- `sudo apt install cmake`
 
 ## Windows
  - Guide based on: <https://code.visualstudio.com/docs/cpp/config-mingw>, refer to link if you encounter any errors
@@ -81,6 +73,9 @@ Skeleton project folder for crossplatform building SFML-project with CMake.Inclu
 6. Check your MinGW installation
 - open CMD and run `g++ --version` and `gdb --version`
 
+7. Download and install CMake
+- Enable option to add CMake to PATH environment variable during installation.
+- https://cmake.org/install/
 
 # How to build?
 
