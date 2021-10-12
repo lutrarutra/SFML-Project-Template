@@ -10,6 +10,10 @@ ELSEIF (APPLE)
     # run 'where clang' and 'where clang++' to get paths
     set(CMAKE_C_COMPILER /usr/bin/clang)
     set(CMAKE_CXX_COMPILER /usr/bin/clang++)
+ELSEIF (UNIX AND NOT APPLE)
+    # run 'which gcc' and 'which g++' to get paths
+    set(CMAKE_C_COMPILER /usr/bin/gcc)
+    set(CMAKE_CXX_COMPILER /usr/bin/g++)
 ENDIF()
     
 # Get project name from folder name
