@@ -7,7 +7,7 @@
                 "MIMode": "lldb",
             },
             "windows": {
-                "MIMode": "msvc",
+                "MIMode": "gdb",
             },
             "linux": {
                 "MIMode": "gdb",

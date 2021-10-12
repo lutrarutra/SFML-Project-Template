@@ -1,5 +1,12 @@
 cmake_minimum_required(VERSION 3.1)
 
+IF (WIN32)
+    SET(CMAKE_C_COMPILER C:/msys64/mingw64/bin/gcc.exe)
+    SET(CMAKE_CXX_COMPILER C:/msys64/mingw64/bin/g++.exe)
+    # this makes sure that .dll-files are build into build/ folder
+    set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/build)
+ENDIF()
+
 # Get project name from folder name
 get_filename_component(ProjectId ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 string(REPLACE " " "_" ProjectId ${ProjectId})
@@ -20,6 +27,8 @@ include_directories(src)
 add_subdirectory(lib)
 
 add_executable(${PROJECT_NAME} ${SOURCES})
+
+
 target_link_libraries(${PROJECT_NAME} PRIVATE ImGui-SFML::ImGui-SFML)
 
 # Additional resources like images and fonts
